@@ -20,11 +20,11 @@
 
 window.onload = function(){
     alert("Red!!!");
-    //var colourSetting = document.getElementById("colourSetting");
-    //pColour = document.createElement("p");
-    //pColour.innerHTML = "<p>Here is some" + "<span style=\"color: red;\">red<\span> text <\p>";
-    //colourSetting[0].append(pColour);
+    var colourSetting = document.getElementById("colourSetting");
+    pColour = document.createElement("p");
+    pColour.innerHTML = "<p>Here is some" + "<span style=\"color: red;\"> red<\span> text <\p>";
+    colourSetting.append(pColour);
 
-    let test = document.getElementById("test");
-    test.innerHTML = "<p>Here is some" + "<span style=\"color: red;\"> red<\span>" + " text <\p>";
+    //let test = document.getElementById("test");
+    //test.innerHTML = "<p>Here is some" + "<span style=\"color: red;\"> red<\span> text <\p>";
 }
