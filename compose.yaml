@@ -1,10 +1,24 @@
 services:
-  nginx:
+  nginx_red:
     image: nginx
     volumes:
       - ./red:/usr/share/nginx/html:ro
     ports:
       - "81:80"
+
+  nginx_green:
+    image: nginx
+    volumes:
+      - ./green:/usr/share/nginx/html:ro
+    ports:
+      - "83:80"
+
+  nginx_blue:
+    image: nginx
+    volumes:
+      - ./blue:/usr/share/nginx/html:ro
+    ports:
+      - "84:80"
 
   web:
     image: node:18
