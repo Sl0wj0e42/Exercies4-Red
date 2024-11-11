@@ -5,8 +5,10 @@ services:
       - ./red:/usr/share/nginx/html:ro
     ports:
       - "81:80"
+
   web:
     image: node:18
+    working_dir: /usr/src/backend
     volumes:
       - ./backend:/usr/src/backend
     ports:
